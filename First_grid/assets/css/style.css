@@ -1,0 +1,95 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Start of "Micro clearfix" */
+
+        .cf { zoom: 1; }
+        .cf:before, .cf:after { 
+          content: ""; display: table; 
+        }
+        .cf:after { clear: both; }
+
+   /* End of "Micro clearfix" */
+ 
+
+/*background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+
+.container{
+  max-width:80vw;
+ /* background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+  /*background-image:url('../img/grid2.png');*/
+  border:1px solid #000;
+  margin:20px auto;
+}
+
+header.primary{
+  /* 908px */
+  width:94.583%;
+  background:rgba(0,255,0,0.3);
+  /* 20px */
+  margin:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+#content {
+  /* 676px */
+  width:70.416%;
+  background:rgba(192,192,192,0.3);
+  margin-left:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+aside{
+  /*212px*/
+  width:20.083%;
+  background:rgba(192,192,192,0.3);
+  margin-left:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+footer.primary{
+  /* 908px */
+  width:94.583%;
+  background:rgba(0,255,0,0.3);
+  /* 20px */
+  margin:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+.col-6{
+   /*328px*/
+  width:34.166%;
+  background:rgba(0,0,0,.3);
+  margin-left:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+.col-10{
+  /* 560px */
+  width:58.333%;
+  background:rgba(0,0,0,.6);
+  margin-left:2.083%;
+  padding:2.202%;
+  float:left;
+}
+
+.col-16{
+  /* 908px */
+  width:94.583%;
+  background:rgba(0,0,0,.4);
+  /* 20px */
+  margin:2.083%;
+  padding:2.202%;
+  float:left;
+}
