@@ -188,3 +188,97 @@ footer{
 text-align:center;
 padding:20px 0;
 }
+
+
+main.container{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills";
+}
+
+.page-title{
+  grid-area: title;
+}
+#about{
+  grid-area: about;
+}
+#skills{
+  grid-area: skills;
+
+}
+#experience{
+  grid-area: experience;
+}
+#education{
+  grid-area: education;
+}
+
+
+
+
+/*----------------------Tablet Breakpoint-----------------------*/
+
+@media screen and (min-width:768px){
+  
+main.container {
+    max-width:900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      " . education";
+  }
+  header.container{
+    max-width:900px;
+  }  
+  
+  /* Nested Grid Example */
+  #about{
+    display:grid;
+    grid-gap:2em;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-areas:
+      "bio details details"
+      "related related related"
+  }
+  
+.bio{
+  grid-area:bio;
+}
+.details{
+  grid-area:details;
+}
+  
+.related-links{
+  grid-area:related;
+  border-bottom:1px solid #999;
+  padding-bottom:50px
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------Edge Case Tweaks-----------------------*/
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
+}
