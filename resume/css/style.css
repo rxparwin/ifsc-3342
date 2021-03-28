@@ -41,8 +41,8 @@ img{
 /* ------ Global Styles -------*/
 
 body{
-  background:#efefef;
-  color:#222222;
+  background:#fff;
+  color:#555555;
   line-height:1.6;
 } 
 
@@ -122,14 +122,14 @@ dl{
 dt{
   font-weight:800;
   padding: 10px 0;
-  border-bottom:1px solid #999;
+  /*border-bottom:1px solid #999;*/
   grid-column:1;
 }
 
 dd{
   margin:0;
   padding:10px 0;
-  border-bottom:1px solid #999;
+  /*border-bottom:1px solid #999;*/
   grid-column:2;
 }
 
@@ -230,8 +230,8 @@ main.container {
     grid-template-columns: 36.5% auto;
     grid-template-areas:
       "title title"
-      "about about"
-      "skills experience"
+      " about about"
+      " skills experience"
       " . education";
   }
   header.container{
@@ -245,7 +245,7 @@ main.container {
     grid-template-columns: 300px 1fr auto;
     grid-template-areas:
       "bio details details"
-      "related related related"
+      " related related related"
   }
   
 .bio{
@@ -267,10 +267,18 @@ main.container {
 
 
 
+/*----------------------Desktop Breakpoint-----------------------*/
 
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    grid-gap: 20px;
+    grid-template-columns: 120px 120px auto;
+    grid-template-areas:
+      "title  title  title"
+      "about about about "
+      "skills  experience  education";
 
-
-
+  }
 
 
 
