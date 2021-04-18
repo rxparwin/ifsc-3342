@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="audio-player.js"></script>
+<script>
+   audiojs.events.ready(function() {
+     var as = audiojs.createAll();
+   });
+ </script>
+<audio controls>
+  
+  <source src="thunder.mp3" type="audio/mp3">
+  <source src="thunder.ogg" type="audio/ogg">
+  <source src="thunder.wav" type="audio/wav">
+
+</audio>
+ <audio src="thunder.mp3" preload="auto" />
+</body>
+</html>
