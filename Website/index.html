@@ -14,14 +14,16 @@
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
         <h5 class="my-0 mr-md-auto font-weight-normal">Covers for you</h5>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="">ABOUT</a>
-            <a class="p-2 text-dark" href="">CASES</a>
-            <a class="p-2 text-dark" href="">SCREEN PROTECTORS</a>
-            <a class="p-2 text-dark" href="">HEADPHONES</a>
-            <a class="p-2 text-dark" href="">DEALS</a>
+            <a class="p-2 text-dark" href="#ABOUT">ABOUT</a>
+            <a class="p-2 text-dark" href="#CASES">CASES</a>
+            <a class="p-2 text-dark" href="#SCREENPROTECTORS">SCREEN PROTECTORS</a>
+            <a class="p-2 text-dark" href="#HEADPHONES">HEADPHONES</a>
+            <a class="p-2 text-dark" href="#DEALS">DEALS</a>
         </nav>
 
-     </div>
+      
+        <!--<a class="btn btn-outline-primary" href="#">Sign up</a>-->
+    </div>
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -51,10 +53,28 @@
                     <p>Covers 4 u is the Arkansas online mobile accessories  - offering the latest mobile phone accessories. We put our success down to responding to what our customers want and our extensive range of the latest mobile accessories, teamed with world-class customer service. </p>
                     <p> This is exclusive websit for catalog, where customer can browse and select the product before they come to the store to save time and stop spreading covid-19. </p>
                     <img class="mySlides" src="img/S21Ultra_Banner_Web.jpg" />
+                    <img class="mySlides" src="img/S21_Banner_Web.jpg" />
+                    <img class="mySlides" src="img/S21_Plus_Banner_Web.jpg" />
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
      <section class="" id="CASES">
         <div class="container">
             <h1>CASES</h1>
