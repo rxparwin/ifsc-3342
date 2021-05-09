@@ -194,8 +194,8 @@ main.container{
   display: grid;
   grid-gap: 1em;
   grid-template-areas:
-    "title"
-    "about"
+  
+    "about, title"
     "education"
     "experience"
     "skills";

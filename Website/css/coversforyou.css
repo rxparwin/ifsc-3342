@@ -2,5 +2,21 @@ header {
        background-image: url('../img/HeadImg.jpg');
    
 }
+@media (min-width: 576px) {
+    .card-text {
+        color: red;
+}
+}
 
+@media (min-width: 768px) {
+    .card-text {
+        color:black;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-text {
+        color:blue;
+    }
+}
  
