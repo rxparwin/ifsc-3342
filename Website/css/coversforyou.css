@@ -4,7 +4,7 @@ header {
 }
 @media (min-width: 576px) {
     .card-text {
-        color: red;
+        color: black;
 }
 }
 
@@ -16,7 +16,9 @@ header {
 
 @media (min-width: 992px) {
     .card-text {
-        color:blue;
+        color:black;
     }
 }
- 
+ body{
+ background-color: #FAF0E6;
+ }
